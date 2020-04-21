@@ -20,6 +20,7 @@ header {
 }
 
 nav {
+    color: white;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
@@ -57,7 +58,11 @@ nav {
 }
 
 .menuLabel:hover,
-.active>.menuLabel,
+.category.active>.menuLabel,
 .menuElem:hover {
     background-color: brown;
+}
+
+.subMenu.active>.menuLabel {
+    background-color: orange;
 }
