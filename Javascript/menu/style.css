@@ -37,7 +37,7 @@ nav {
     background-color: grey;
 }
 
-.active:first-child>.menuContent {
+.category.active>.menuContent {
     margin-top: 0vh;
     margin-left: 0vw;
 }
