@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    color: white;
+    color: black;
 }
 
 header,
@@ -27,8 +27,37 @@ nav {
     height: 4vh;
 }
 
-.menuTitle {
+.menuContent {
+    margin-top: -4vh;
+    margin-left: 10vw;
+    position: absolute;
+    display: none;
+    background-color: grey;
+}
+
+.active:first-child>.menuContent {
+    margin-top: 0vh;
+    margin-left: 0vw;
+}
+
+.active>.menuContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuLabel,
+.menuElem {
+    margin: 0;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 4vh;
+    width: 10vw;
+}
+
+.menuLabel:hover,
+.active>.menuLabel,
+.menuElem:hover {
+    background-color: brown;
 }
