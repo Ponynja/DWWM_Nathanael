@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(30,30,30);
+    font-size: 18px;
+}
+
+h1{
+    font-weight: normal;
+    background-color: rgb(60,60,60);
+    padding: 1.5vh 2vw;
+    border-radius: 2vw;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    background-color: rgb(60,60,60);
+    padding: 4vh 3vw;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+form p{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form p div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    
+    background-color: rgb(80,80,80);
+    padding: 0.5vh 0.5vw;
+    border: unset;
+    border-bottom: 4px solid white;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    outline: none;
+    margin: 0vh 1vw;
+}
+
+form p > span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    border-radius: 2vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    padding: 0.5vh;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.message.visible{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+form input:focus{
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+
+}
+
+form input[type="submit"]{
+    margin-top: 3vh;
+    padding: 1vh 2vw;
+}

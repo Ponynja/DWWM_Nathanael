@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#jeu{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}
+
+.bouton {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1.5vw;
+}
+
+body>div{
+    margin: 1.5vh 0;
+}
+
+#jeu>div{
+    width: 100%;
+}
+
+#jeu img{
+    margin: 1vh 1vh;
+}
+
+.carte{
+    cursor: pointer;
+    transform: rotate3d(0,1,0,0deg);
+    transition: transform 0.5s;
+    box-sizing: border-box;
+}
+
+.carte.flip{
+    transform: rotate3d(0,1,0,180deg);
+    transition: transform 0.5s;
+}
+

@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: white;
+}
+
+header,
+nav {
+    width: 100%;
+    display: flex;
+}
+
+header {
+    background-color: grey;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: darkgray;
+    height: 4vh;
+}
+
+.menuTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

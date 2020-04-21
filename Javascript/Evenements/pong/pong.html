@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>deplacerElement</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="score" id="score1">00</div>
+
+        <div id="terrain">
+
+            <div id="centre"></div>
+
+            <div class="raquette obstacle" id="joueur1"></div>
+            <div class="raquette obstacle" id= "joueur2"></div>
+
+            <div id="balle"></div>
+
+            <div class="obstacle" id="haut"></div>
+            <div class="obstacle" id="bas"></div>
+            <div class="obstacle" id="droite"></div>
+            <div class="obstacle" id="gauche"></div>
+
+        </div>
+
+        <div class="score" id="score2">00</div>
+
+        <div id="victoire" class="hidden">Vicoire du joueur 1!</div>
+
+        <div id="menu">
+
+            <h1>JS PONG</h1>
+            <h2>par Nathanaël Montiel</h2>
+
+            
+            <h3>Comment-jouer?</h3>
+
+            <div id="commandes">
+                <div>
+                    <h3>Joueur 1</h3>
+                    <p>Controllez votre raquette avec Z et S .</p>
+                </div>
+                <div>
+                    <h3>Joueur 2</h3>
+                    <p>Controllez votre raquette avec ↑ et ↓ .</p>
+                </div>
+            </div>
+
+            <p id="start">Cliquez pour commencer!</p>
+
+        </div>
+        
+        <script src="fonctions.js"></script>
+        <script src="son.js"></script>
+        <script src="terrain.js"></script>
+        <script src="raquette.js"></script>
+        <script src="balle.js"></script>
+        <script src="obstacles.js"></script>
+        <script src="score.js"></script>
+        <script src="pong.js"></script>
+
+    </body>
+</html>

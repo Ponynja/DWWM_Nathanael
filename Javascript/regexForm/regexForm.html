@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Regex sur un formulaire</h1>
+
+    <form action="" method="POST">
+        <p>
+            <label for="nom">Nom</label>
+            <span>
+                <input required class="checkValidity" type="text" name="nom" id="nom" pattern="^([A-ZÀ-Ý -]){2,}[^*x]$">
+                <span class="message"></span>
+            </span>
+        </p>
+        <p>
+            <label for="prenom">Prenom</label>
+            <span>
+                <input required class="checkValidity" type="text" name="prenom" id="prenom" pattern="^[A-ZÀ-Ý]{1}[a-zà-ý '-]*$">
+                <span class="message"></span>
+            </span>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <span>
+                <input required class="checkValidity" type="email" name="email" id="email" pattern="^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$">
+                <span class="message"></span>
+            </span>
+        </p>
+
+        <p>
+            <label for="mdp">Mot de Passe</label>
+            <span>
+                <input required class="checkValidity" type="password" name="mdp" id="mdp" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#\$%\^&\*+])[a-zA-Z\d!@#\$%\^&\*+]{8,}$">
+                <span class="message"></span>
+            </span>
+        </p>
+
+        <p>
+            <label for="cp">Code Postal</label>
+            <span>
+                <input required class="checkValidity" type="text" name="cp" id="cp" pattern="\d{5}$">
+                <span class="message"></span>
+            </span>
+        </p>
+        <p>
+            <label for="tel">Téléphone</label>
+            <span>
+                <input required class="checkValidity" type="text" name="tel" id="tel" pattern="^0[1-9]([-./ ]?[\d]{2}){4}$">
+                <span class="message"></span>
+            </span>
+        </p>
+
+        <input type="submit" id="submit">
+    </form>
+
+    <script src="js/regex.js"></script>
+
+</body>
+
+</html>

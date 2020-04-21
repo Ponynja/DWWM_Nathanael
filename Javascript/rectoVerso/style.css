@@ -1,0 +1,9 @@
+#carte{
+    transform: rotate3d(0,1,0,0deg);
+    transition: transform 0.5s;
+}
+
+#carte.flip{
+    transform: rotate3d(0,1,0,180deg);
+    transition: transform 0.5s;
+}
