@@ -6,39 +6,45 @@ var reset = document.getElementById("reset");
 
 var chrono = document.getElementById("chrono");
 
-var seconds = 0;
+var seconds100th = 0;
 
 
 start.addEventListener("click", function() {
     if (!isRunning) {
         isRunning = true;
-        setTimeout(timer, 1000);
+        chrono.classList.remove("pause");
+        setTimeout(timer, 10);
     }
 });
 
 pause.addEventListener("click", function() {
     if (isRunning) {
         isRunning = false;
+        chrono.classList.add("pause");
     }
 });
 
 reset.addEventListener("click", function() {
     isRunning = false;
-    seconds = 0;
+    seconds100th = 0;
+    chrono.classList.remove("pause");
     timerDisplay(0, 0, 0);
 });
 
 function timer() {
 
     if (isRunning) {
-        seconds++;
-        hms = secToHMS(seconds);
+        console.log(seconds100th);
+        seconds100th++;
+        hms = millisecToHMS(seconds100th);
         timerDisplay(hms[0], hms[1], hms[2]);
-        setTimeout(timer, 1000);
+        setTimeout(timer, 10);
     }
 }
 
-function secToHMS(totalSeconds) {
+function millisecToHMS(totalSeconds100th) {
+
+    totalSeconds = Math.floor(totalSeconds100th / 100);
 
     var hms = [];
 

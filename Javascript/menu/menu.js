@@ -1,11 +1,10 @@
 //Labels cliquables des menus et sous-menus
 var labels = document.getElementsByClassName("menuLabel");
 
-//Ajout de l'envent click sur chaque label
+//Ajout de l'event click sur chaque label
 for (let i = 0; i < labels.length; i++) {
     labels[i].addEventListener("click", labelClickListener);
 }
-
 
 //Fonction qui ferme tous les menus actifs
 function closeAll() {
