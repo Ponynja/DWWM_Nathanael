@@ -57,14 +57,17 @@ nav {
     align-items: center;
     height: 4vh;
     width: 10vw;
+    transition: background-color 0.1s;
 }
 
 .menuLabel:hover,
 .category.active>.menuLabel,
 .menuElem:hover {
     background-color: brown;
+    transition: background-color 0.2s;
 }
 
 .subMenu.active>.menuLabel {
     background-color: orange;
+    transition: background-color 0.2s;
 }
