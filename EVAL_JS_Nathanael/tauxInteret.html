@@ -16,21 +16,21 @@
 
         <p class="flex row alignCenter">
             <label for="capitalEmprunte">Capital Emprunté</label>
-            <input type="text" name="capitalEmprunte" id="capitalEmprunte" pattern="^[0-9]+\.?[0-9]*$">
+            <input class="checkValidity" type="text" required name="capitalEmprunte" id="capitalEmprunte" pattern="^[0-9]+\.?[0-9]*$">
             <span class="unit flex justifyCenter">€</span>
             <span class="message"></span>
         </p>
 
         <p class="flex row alignCenter">
             <label for="tauxNominalAnnuel">Taux Nominal Annuel</label>
-            <input type="text" name="tauxNominalAnnuel" id="tauxNominalAnnuel" pattern="^[0-9]+\.?[0-9]*$">
+            <input class="checkValidity" type="text" required name="tauxNominalAnnuel" id="tauxNominalAnnuel" pattern="^[0-9]+\.?[0-9]*$">
             <span class="unit flex justifyCenter">%</span>
             <span class="message"></span>
         </p>
 
         <p class="flex row alignCenter">
             <label for="dureeEmprunt">Durée d'emprunt</label>
-            <input type="text" name="dureeEmprunt" id="dureeEmprunt" pattern="^[0-9]+$">
+            <input class="checkValidity" type="text" required name="dureeEmprunt" id="dureeEmprunt" pattern="^[0-9]+$">
             <span class="unit flex justifyCenter">Ans</span>
             <span class="message"></span>
         </p>
@@ -60,7 +60,8 @@
 
     </div>
 
-    <script src="tauxInteret.js"></script>
+    <script src="js/regex.js"></script>
+    <script src="js/tauxInteret.js"></script>
 
 </body>
 
