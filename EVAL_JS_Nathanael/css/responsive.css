@@ -1,0 +1,15 @@
+@media screen and (max-width: 1200px) {
+    .form,
+    #buttons {
+        width: 75vw;
+        transition: width 0.3s;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .form,
+    #buttons {
+        width: 95vw;
+        transition: width 0.3s;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body class="flex column alignCenter justifyCenter">
+
+    <h1 class="flex column alignCenter justifyCenter">Calcul du taux d'intérêt</h1>
+
+    <div class="form flex column justifyCenter alignCenter" id="input">
+
+        <p class="flex row alignCenter">
+            <label for="capitalEmprunte">Capital Emprunté</label>
+            <input type="text" name="capitalEmprunte" id="capitalEmprunte" pattern="^[0-9]+\.?[0-9]*$">
+            <span class="unit flex justifyCenter">€</span>
+            <span class="message"></span>
+        </p>
+
+        <p class="flex row alignCenter">
+            <label for="tauxNominalAnnuel">Taux Nominal Annuel</label>
+            <input type="text" name="tauxNominalAnnuel" id="tauxNominalAnnuel" pattern="^[0-9]+\.?[0-9]*$">
+            <span class="unit flex justifyCenter">%</span>
+            <span class="message"></span>
+        </p>
+
+        <p class="flex row alignCenter">
+            <label for="dureeEmprunt">Durée d'emprunt</label>
+            <input type="text" name="dureeEmprunt" id="dureeEmprunt" pattern="^[0-9]+$">
+            <span class="unit flex justifyCenter">Ans</span>
+            <span class="message"></span>
+        </p>
+
+    </div>
+
+    <div class="form  flex column justifyCenter alignCenter" id="result">
+        <p class="flex row alignCenter">
+            <label for="mensualite">Mensualite</label>
+            <input type="text" disabled name="mensualite" id="mensualite">
+            <span class="unit flex justifyCenter">€</span>
+            <span class="message"></span>
+        </p>
+
+        <p class="flex row alignCenter">
+            <label for="coutTotal">Coût Total</label>
+            <input type="text" disabled name="coutTotal" id="coutTotal">
+            <span class="unit flex justifyCenter">€</span>
+            <span class="message"></span>
+        </p>
+    </div>
+
+    <div id="buttons" class="flex row alignCenter justifyCenter">
+
+        <button id="calcButton">Calculer</button>
+        <button id="resetButton">Nouveau Calcul</button>
+
+    </div>
+
+    <script src="tauxInteret.js"></script>
+
+</body>
+
+</html>

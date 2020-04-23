@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: peachpuff;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    flex: 1;
+}
+
+.form {
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 60vw;
+    padding: 2vh 2vw;
+    margin: 2vh 0;
+    transition: width 0.3s;
+}
+
+#input {
+    flex: 2;
+}
+
+#result {
+    flex: 1;
+}
+
+.form p {
+    width: 100%;
+}
+
+.form p label,
+.form p input,
+.form p .message {
+    flex: 1;
+}
+
+.form p .unit {
+    flex: 0.5;
+}
+
+#buttons {
+    width: 50vw;
+    flex: 2;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
