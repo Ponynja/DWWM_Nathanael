@@ -1,0 +1,231 @@
+:root {
+    --color-main: #EE3331;
+    --color-accent: #5EBC20;
+    --color-back: #EEEEEE;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-back);
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 999;
+    color: white;
+    background-color: var(--color-main);
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+header #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 2;
+}
+
+header #logo img {
+    max-height: 70%;
+}
+
+header h1 {
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 10;
+}
+
+header .spacer {
+    flex: 2;
+}
+
+#pageContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    padding: 2vh 2vw;
+    transition: width 0.3s;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin-top: 8vh;
+    width: 100vw;
+    background-color: black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#searchBar {
+    font-size: 1.8vh;
+    outline: none;
+    height: 3.5vh;
+    width: 25vw;
+    padding: 0 1vw;
+    border: unset;
+    border-radius: 2vh 0 0 2vh;
+}
+
+#searchButton {
+    font-size: 1.8vh;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 0 2vh 2vh 0;
+    height: 3.5vh;
+    width: 6vw;
+}
+
+.station {
+    margin: 2vh 1vw;
+    background-color: var(--color-main);
+    width: 35vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.station:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.station p {
+    margin: 0.5vh 0;
+    flex: 1;
+}
+
+.station .entete {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    flex: 3;
+    color: white;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.station .entete h2 {
+    width: 100%;
+    font-size: 2vh;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+.station .entete .adresse {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1vh;
+    border-radius: 1vh;
+    transition: background-color 0.3s;
+}
+
+.station .entete .adresse:hover {
+    transition: background-color 0.3s;
+    background-color: var(--color-accent);
+}
+
+.station .corps {
+    flex: 6;
+    display: flex;
+    background-color: white;
+}
+
+.station .corps .dispo {
+    display: flex;
+    flex: 1;
+}
+
+.station .dispo .velos,
+.station .dispo .places {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.station .dispo .places {
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.station .dispo .label {
+    font-size: 2vh;
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.station .dispo .num {
+    font-size: 6vh;
+    flex: 3;
+    color: var(--color-accent);
+}
+
+.station .pied {
+    box-shadow: inset 0px 4px 0px rgba(0, 0, 0, 0.3);
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    #pageContent {
+        padding-top: 0vh;
+        width: 100vw;
+        transition: width 0.3s;
+    }
+    header {
+        flex-direction: column;
+        height: 16vh;
+    }
+    header .spacer {
+        display: none;
+    }
+    header h1 {
+        font-size: 2.5vh;
+        flex: 1;
+    }
+    header #logo {
+        flex: 1;
+    }
+    #search {
+        margin-top: 16vh;
+    }
+    #searchBar {
+        width: 70vw;
+    }
+    #searchButton {
+        width: 20vw;
+    }
+}
