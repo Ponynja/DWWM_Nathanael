@@ -25,7 +25,7 @@ function AfficherPage($page)
 // on initialise les paramètres du fichier parametre.ini
 Parametre::init();
 //on active la connexion à la base de données
-// DbConnect::init();
+DbConnect::init();
 session_start();
 
 $routes = [
