@@ -39,3 +39,7 @@ Version: 1.0
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     color: rgb(180, 138, 58) !important;
 }
+
+ul {
+    list-style-image: url(../../uploads/2020/04/puce.png);
+}
