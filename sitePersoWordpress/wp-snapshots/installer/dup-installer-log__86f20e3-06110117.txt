@@ -1,0 +1,569 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 11:03:34
+* VERSION: 1.3.30
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.3.12                                |7.3.12
+OS__________________: WINNT                                 |WINNT
+CREATED_____________: 2020-05-06 11:01:17
+WP VERSION__________: 5.4
+DUP VERSION_________: 1.3.30
+DB__________________: 5.7.21
+DB TABLES___________: 28
+DB ROWS_____________: 1,089
+DB FILE SIZE________: 1.81MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.3.12 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.41 (Win64) PHP/7.3.12
+DOC ROOT____________: "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://sitepersowordpress/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "ziparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "F:/AFPA/DWWM_Nathanael/sitePersoWordpress/20200505_wordpress_Nathanael_[HASH]_20200506110117_archive.zip"
+SIZE________________: 35.31MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION STANDARD >>> 
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "F:/AFPA/DWWM_Nathanael/sitePersoWordpress/20200505_wordpress_Nathanael_[HASH]_20200506110117_archive.zip"
+SIZE________________: 35.31MBFile timestamp set to Current: 2020-05-06 11:03:41
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 11:03:41 - RUNTIME: 6.6274 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 11:04:11
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.21 -- Build Server: 5.7.21
+FILE SIZE:	dup-database__[HASH].sql (1.34MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+NEW SQL FILE:	[F:/AFPA/DWWM_Nathanael/sitePersoWordpress/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+[PHP ERR][WARN] MSG:count(): Parameter must be an array or an object that implements Countable [CODE:2|FILE:F:\AFPA\DWWM_Nathanael\sitePersoWordpress\dup-installer\ctrls\ctrl.s2.dbinstall.php|LINE:386]
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	1120
+
+wp_commentmeta: (0)
+wp_comments: (1)
+wp_links: (0)
+wp_options: (170)
+wp_perso_commentmeta: (0)
+wp_perso_comments: (1)
+wp_perso_duplicator_packages: (0)
+wp_perso_links: (0)
+wp_perso_ngg_album: (0)
+wp_perso_ngg_gallery: (1)
+wp_perso_ngg_pictures: (3)
+wp_perso_options: (168)
+wp_perso_postmeta: (367)
+wp_perso_posts: (119)
+wp_perso_term_relationships: (30)
+wp_perso_term_taxonomy: (10)
+wp_perso_termmeta: (0)
+wp_perso_terms: (10)
+wp_perso_usermeta: (36)
+wp_perso_users: (2)
+wp_postmeta: (91)
+wp_posts: (31)
+wp_term_relationships: (4)
+wp_term_taxonomy: (3)
+wp_termmeta: (0)
+wp_terms: (3)
+wp_usermeta: (23)
+wp_users: (1)
+Removed '15' cache/transient rows
+
+INSERT DATA RUNTIME: 0.9031 sec.
+STEP-2 COMPLETE @ 11:04:12 - RUNTIME: 0.9131 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 11:04:18
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Abeilles"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "F:/AFPA/DWWM_Nathanael/duplicator"
+path_new______________: "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+siteurl_______________: "http://sitepersowordpress"
+url_old_______________: "http://dwwm/duplicator"
+url_new_______________: "http://sitepersowordpress"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbhost________________: "localhost:3308"
+dbuser________________: "wordpress"
+dbname________________: "wordpress"
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_username___________: ""
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   170][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_commentmeta"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_perso_comments"_______________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_duplicator_packages"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_perso_links"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_perso_ngg_album"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_perso_ngg_gallery"____________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_ngg_pictures"___________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_options"________________________________[ROWS:   168][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_postmeta"_______________________________[ROWS:   367][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_posts"__________________________________[ROWS:   119][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_term_relationships"_____________________[ROWS:    30][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_term_taxonomy"__________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_termmeta"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_perso_terms"__________________________________[ROWS:    10][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_usermeta"_______________________________[ROWS:    36][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_perso_users"__________________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:    91][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:    31][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:    23][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"F:/AFPA/DWWM_Nathanael/duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  2:"F:\/AFPA\/DWWM_Nathanael\/duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  3:"F%3A%2FAFPA%2FDWWM_Nathanael%2Fduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  4:"F:\AFPA\DWWM_Nathanael\duplicator" ===============> "F:/AFPA/DWWM_Nathanael/sitePersoWordpress"
+	SEARCH  5:"F:\\AFPA\\DWWM_Nathanael\\duplicator" ============> "F:\/AFPA\/DWWM_Nathanael\/sitePersoWordpress"
+	SEARCH  6:"F%3A%5CAFPA%5CDWWM_Nathanael%5Cduplicator" =======> "F%3A%2FAFPA%2FDWWM_Nathanael%2FsitePersoWordpress"
+	SEARCH  7:"//dwwm/duplicator" ===============================> "//sitepersowordpress"
+	SEARCH  8:"\/\/dwwm\/duplicator" ============================> "\/\/sitepersowordpress"
+	SEARCH  9:"%2F%2Fdwwm%2Fduplicator" =========================> "%2F%2Fsitepersowordpress"
+	SEARCH 10:"https://sitepersowordpress" ======================> "http://sitepersowordpress"
+	SEARCH 11:"https:\/\/sitepersowordpress" ====================> "http:\/\/sitepersowordpress"
+	SEARCH 12:"https%3A%2F%2Fsitepersowordpress" ================> "http%3A%2F%2Fsitepersowordpress"
+--------------------------------------
+SCANNED:	Tables:28 	|	 Rows:1074 	|	 Cells:7211 
+UPDATED:	Tables:3 	|	 Rows:126 	|	 Cells:150 
+ERRORS:		0 
+RUNTIME:	0.266000 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME ""wordpress""
+	UPDATE DB_USER ""wordpress""
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost:3308""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 11:04:19 - RUNTIME: 0.3070 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] No general notices
+	SECTIONS: general
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+====================================
