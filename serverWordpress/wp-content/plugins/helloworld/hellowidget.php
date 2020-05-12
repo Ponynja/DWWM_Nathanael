@@ -1,5 +1,5 @@
 <?php
-class hellowidget extends WP_Widget
+class HelloWidget extends WP_Widget
 {
     public function __construct()
     {
