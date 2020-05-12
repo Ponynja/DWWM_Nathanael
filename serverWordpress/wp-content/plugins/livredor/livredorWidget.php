@@ -23,8 +23,8 @@ class LivreDorWidget extends WP_Widget
         <form action="" method="post">
             <p>
             
-            <label for="livredor_message">Votre commentaire :</label>
-                <input id="livredor_message" name="livredor_message" type="texte"/>
+            <label for="livredor_message">Votre message :</label>
+                <textarea name="livredor_message" id="livredor_message" cols="30" rows="10"></textarea>
                 <label for="livredor_name">Votre nom :</label>
                 <input id="livredor_name" name="livredor_name" type="texte"/>
 
