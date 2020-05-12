@@ -21,7 +21,7 @@ class LivreDorClass
     public static function install()
     { //méthode déclenchée à l'activation du plug-in
         global $wpdb;
-        $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}livredor (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(50) NOT NULL, message VARCHAR(255) NOT NULL, datemessage DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP);");
+        $wpdb->query("CREATE TABLE IF NOT EXISTS {$wpdb->prefix}livredor (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(50) NOT NULL, message VARCHAR(100) NOT NULL, datemessage DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP);");
     }
 
     public static function uninstall()
@@ -37,6 +37,7 @@ class LivreDorClass
             global $wpdb;
             $name = $_POST['livredor_name'];
             $message = $_POST['livredor_message'];
+
             $row = $wpdb->get_row("SELECT * FROM {$wpdb->prefix}livredor WHERE message = '$message' AND name='$name'");
 
             if (is_null($row)) {

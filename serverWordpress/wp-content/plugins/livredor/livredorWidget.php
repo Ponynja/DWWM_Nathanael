@@ -34,12 +34,15 @@ class LivreDorWidget extends WP_Widget
                 $rows = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}livredor");
 
                 foreach ($rows as $row) {
+
+                    $date = date('d/m/Y', strtotime($row->datemessage));
+
                     echo 
                     
                     '<div class="livredorMessage">
                     
-                        <div class="date">'.$row->datemessage .'</div>
-                        <div class="message">'.$row->message .'</div>
+                        <div class="date">'.$date .'</div>
+                        <div class="message">'.stripslashes($row->message) .'</div>
                         <div class="name">'.$row->name .'</div>
 
                     
