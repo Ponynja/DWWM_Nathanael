@@ -17,38 +17,90 @@ class LivreDorWidget extends WP_Widget
         echo $args['after_title'];
         // corps du widget
         ?>
-        <h1 class="livreDorWidget">Livre d'Or</h1>
 
-        <p class="livreDorWidget">Laissez un message et signez-le.</p>
-        <form action="" method="post">
-            <p>
-            
-            <label for="livredor_message">Votre message :</label>
-                <textarea name="livredor_message" id="livredor_message" cols="30" rows="10"></textarea>
-                <label for="livredor_name">Votre nom :</label>
-                <input id="livredor_name" name="livredor_name" type="texte"/>
 
-            </p>
-            <input type="submit"/>
-        </form>
-        
-        <?php $couleur = get_option('livredor_couleur', 'black');?>
-        
-        <div id="test" style="color:<?php echo $couleur; ?>">
-        <?php
+        <div id="livredor">
 
-        global $wpdb;
-        $rows = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}livredor" );
+            <h1 class="livreDorWidget">Livre d'Or</h1>
 
-        foreach($rows as $row){
+            <div id="livredorMessages">
 
-            echo $row->datemessage.' - '.$row->name.': '.$row->message;
-        }
+                <?php $couleur = get_option('livredor_couleur', 'black');?>
 
-        
-        ?>
+                <div id="test" style="color:<?php echo $couleur; ?>">
+                <?php
+
+                global $wpdb;
+                $rows = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}livredor");
+
+                foreach ($rows as $row) {
+                    echo 
+                    
+                    '<div class="livredorMessage">
+                    
+                        <div class="date">'.$row->datemessage .'</div>
+                        <div class="message">'.$row->message .'</div>
+                        <div class="name">'.$row->name .'</div>
+
+                    
+                    </div>';
+                    
+                }
+
+                ?>
+
+            </div>
+
+            </div>
+
+            <h2>Laissez un message et signez-le:</h2>
+
+            <div id="livredorNouveauMessage">
+
+                <form action="" method="post">
+                    <p>
+
+                        <label for="livredor_message">Votre message :</label>
+                        <textarea name="livredor_message" id="livredor_message" cols="30" rows="10"></textarea>
+                        <label for="livredor_name">Votre nom :</label>
+                        <input id="livredor_name" name="livredor_name" type="texte"/>
+
+                    </p>
+                    <input type="submit"/>
+                 </form>
+
+            </div>
+
 
         </div>
+
+        <script>
+            var messages = document.getElementsByClassName('livredorMessage');
+            var nbmessages = messages.length;
+            var curMessage = 0;
+
+            hideOther(curMessage);
+
+            function hideOther(curMessage){
+                for(let i = 0; i<nbmessages; i++){
+                    if(i != curMessage){
+                        messages[i].style.display="none";
+                    }else{
+                        messages[i].style.display="flex";
+                    }
+                }
+            }
+
+            setInterval(function(){
+                if(curMessage < nbmessages-1){
+                    curMessage++;
+                }else{
+                    curMessage=0;
+                }
+                hideOther(curMessage);
+            },5000);
+
+        </script>
 
         <?php
 

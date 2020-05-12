@@ -1,8 +1,41 @@
-h1.hellowidget {
-    color: red;
+#livredor {
+    width: 100%;
 }
 
-p.hellowidget {
-    text-align: justify;
-    color: blue;
+#livredorMessages {
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(255, 230, 128);
+    overflow: hidden;
+}
+
+.livredorMessage {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 100%;
+    padding: 2vh 2vw;
+}
+
+.livredorMessage .date {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.livredorMessage .message {
+    font-size: 20px;
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.livredorMessage .name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: right;
 }
