@@ -25,9 +25,6 @@ class LivreDorWidget extends WP_Widget
 
             <div id="livredorMessages">
 
-                <?php $couleur = get_option('livredor_couleur', 'black');?>
-
-                <div id="test" style="color:<?php echo $couleur; ?>">
                 <?php
 
                 global $wpdb;
@@ -54,8 +51,6 @@ class LivreDorWidget extends WP_Widget
 
             </div>
 
-            </div>
-
             <h2>Laissez un message et signez-le:</h2>
 
             <div id="livredorNouveauMessage">
@@ -77,7 +72,11 @@ class LivreDorWidget extends WP_Widget
 
         </div>
 
+        <!-- Script de défilement des messages-->
+
         <script>
+
+            var vitesseDefil = <?php echo get_option('livredor_vitesse', 5000);?>;
             var messages = document.getElementsByClassName('livredorMessage');
             var nbmessages = messages.length;
             var curMessage = 0;
@@ -86,6 +85,9 @@ class LivreDorWidget extends WP_Widget
 
             function hideOther(curMessage){
                 for(let i = 0; i<nbmessages; i++){
+
+                    messages[i].style.animationDuration=vitesseDefil+"ms";
+
                     if(i != curMessage){
                         messages[i].style.display="none";
                     }else{
@@ -101,7 +103,7 @@ class LivreDorWidget extends WP_Widget
                     curMessage=0;
                 }
                 hideOther(curMessage);
-            },5000);
+            },vitesseDefil);
 
         </script>
 

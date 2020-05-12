@@ -60,8 +60,8 @@ class LivreDorClass
         echo '<h1>' . get_admin_page_title() . '</h1>';?>
         <form method="post" action="options.php">
             <?php settings_fields('livredor_settings')?>
-            <label>Couleur</label>
-            <input type="text" name="livredor_couleur" value="<?php echo get_option("livredor_couleur") ?>"/>
+            <label>Vitesse de défilement (ms)</label>
+            <input type="number" name="livredor_vitesse" value="<?php echo get_option("livredor_vitesse") ?>"/>
 
             <?php submit_button();?>
         </form>
@@ -70,6 +70,6 @@ class LivreDorClass
 
     public function register_settings()
     {
-        register_setting('livredor_settings', 'livredor_couleur');
+        register_setting('livredor_settings', 'livredor_vitesse');
     }
 }
