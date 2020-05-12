@@ -69,7 +69,6 @@ class LivreDorWidget extends WP_Widget
 
             </div>
 
-
         </div>
 
         <!-- Script de défilement des messages-->
